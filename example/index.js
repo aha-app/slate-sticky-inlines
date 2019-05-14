@@ -23,7 +23,7 @@ class Example extends React.Component {
     this.setState({ value })
   }
 
-  renderNode = (props) => {
+  renderNode = (props, editor, next) => {
     switch (props.node.type) {
       case "link": {
         const className = props.isSelected ? "focused" : ""
@@ -46,6 +46,7 @@ class Example extends React.Component {
         return <a className={className} href="/" {...props.attributes}>{props.children}</a>
       }
     }
+    return next()
   }
 
   render = () => {
