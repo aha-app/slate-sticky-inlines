@@ -2366,6 +2366,11 @@ js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
 
+"js-tokens@^3.0.0 || ^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
+  integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
+
 js-yaml@^3.9.1:
   version "3.9.1"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.9.1.tgz#08775cebdfdd359209f0d2acd383c8f86a6904a0"
@@ -2516,6 +2521,13 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1:
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.3.1.tgz#d1a8ad33fa9ce0e713d65fdd0ac8b748d478c848"
   dependencies:
     js-tokens "^3.0.0"
+
+loose-envify@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
+  integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
+  dependencies:
+    js-tokens "^3.0.0 || ^4.0.0"
 
 lru-cache@^4.0.1:
   version "4.1.1"
@@ -2964,13 +2976,22 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.8, prop-types@^15.6.0:
+prop-types@^15.5.8:
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
+
+prop-types@^15.6.2:
+  version "15.7.2"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
+  integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
+  dependencies:
+    loose-envify "^1.4.0"
+    object-assign "^4.1.1"
+    react-is "^16.8.1"
 
 ps-tree@^1.0.1:
   version "1.1.0"
@@ -3038,27 +3059,34 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dom@^16.2.0:
-  version "16.2.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.2.0.tgz#69003178601c0ca19b709b33a83369fe6124c044"
+react-dom@^16.8.0:
+  version "16.8.6"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.6.tgz#71d6303f631e8b0097f56165ef608f051ff6e10f"
+  integrity sha512-1nL7PIq9LTL3fthPqwkvr2zY7phIPjYrT0jp4HjyEQrEROnw4dG41VVwi/wfoCneoleqrNX7iAD+pXebJZwrwA==
   dependencies:
-    fbjs "^0.8.16"
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    prop-types "^15.6.0"
+    prop-types "^15.6.2"
+    scheduler "^0.13.6"
 
 react-immutable-proptypes@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/react-immutable-proptypes/-/react-immutable-proptypes-2.1.0.tgz#023d6f39bb15c97c071e9e60d00d136eac5fa0b4"
 
-react@^16.2.0:
-  version "16.2.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.2.0.tgz#a31bd2dab89bff65d42134fa187f24d054c273ba"
+react-is@^16.8.1:
+  version "16.8.6"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
+  integrity sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
+
+react@^16.8.0:
+  version "16.8.6"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.8.6.tgz#ad6c3a9614fd3a4e9ef51117f54d888da01f2bbe"
+  integrity sha512-pC0uMkhLaHm11ZSJULfOBqV4tIZkx87ZLvbbQYunNixAAvjnC+snJCg0XQXn9VIsttVsbZP/H/ewzgsd5fxKXw==
   dependencies:
-    fbjs "^0.8.16"
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    prop-types "^15.6.0"
+    prop-types "^15.6.2"
+    scheduler "^0.13.6"
 
 read-only-stream@^2.0.0:
   version "2.0.0"
@@ -3268,6 +3296,14 @@ safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
 
+scheduler@^0.13.6:
+  version "0.13.6"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.13.6.tgz#466a4ec332467b31a91b9bf74e5347072e4cd889"
+  integrity sha512-IWnObHt413ucAYKsD9J1QShUKkbKLQQHdxRyw73sw4FN26iWr3DY/H34xGPe4nmL1DwXyWmSWmMrA9TfQbE/XQ==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+
 selection-is-backward@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/selection-is-backward/-/selection-is-backward-1.0.0.tgz#97a54633188a511aba6419fc5c1fa91b467e6be1"
@@ -3328,21 +3364,21 @@ slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
 
-slate-base64-serializer@^0.2.84:
+slate-base64-serializer@^0.2.105:
   version "0.2.105"
   resolved "https://registry.yarnpkg.com/slate-base64-serializer/-/slate-base64-serializer-0.2.105.tgz#ec45a766b709d223f2670a8c8a0671f068a84e52"
   integrity sha512-Ld3QMJmQwkuQkrYK90StG/5BtbvRsqmTs0JDNNND+Pyo0Cf/XopUufvYlRqe38YMtjGMwZaGXiNOnSJvTy7LmA==
   dependencies:
     isomorphic-base64 "^1.0.2"
 
-slate-dev-environment@^0.2.0, slate-dev-environment@^0.2.2:
+slate-dev-environment@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/slate-dev-environment/-/slate-dev-environment-0.2.2.tgz#bd8946e1fe4cf5447060c84a362a1d026ed8b77f"
   integrity sha512-JZ09llrRQu6JUsLJCUlGC0lB1r1qIAabAkSd454iyYBq6lDuY//Bypi3Jo8yzIfzZ4+mRLdQvl9e8MbeM9l48Q==
   dependencies:
     is-in-browser "^1.1.3"
 
-slate-hotkeys@^0.2.7:
+slate-hotkeys@^0.2.9:
   version "0.2.9"
   resolved "https://registry.yarnpkg.com/slate-hotkeys/-/slate-hotkeys-0.2.9.tgz#0cc9eb750a49ab9ef11601305b7c82b5402348e3"
   integrity sha512-y+C/s5vJEmBxo8fIqHmUcdViGwALL/A6Qow3sNG1OHYD5SI11tC2gfYtGbPh+2q0H7O4lufffCmFsP5bMaDHqA==
@@ -3350,32 +3386,32 @@ slate-hotkeys@^0.2.7:
     is-hotkey "0.1.4"
     slate-dev-environment "^0.2.2"
 
-slate-hyperscript@^0.11.14:
-  version "0.11.30"
-  resolved "https://registry.yarnpkg.com/slate-hyperscript/-/slate-hyperscript-0.11.30.tgz#25b665fe2d1b00b16f0782b130f844552cc8d932"
-  integrity sha512-Ys9owRgk92F24q4mqWzHhNK+mwuXeb1EOh/oDl4NYiiQTX79xl8J2/YTIDlmU0svOlzOqj8lQdlD7KWvsE6kUQ==
+slate-hyperscript@^0.13.1:
+  version "0.13.2"
+  resolved "https://registry.yarnpkg.com/slate-hyperscript/-/slate-hyperscript-0.13.2.tgz#75978d2a7343b32229d8eee25340216580cd10e3"
+  integrity sha512-T1mmHoBkOIkdSzkmj+u9uT4D08k66HxmVLrTOCN5hUQrfPt6sJT2h+WB/hxF6qw2eB26t8o9rDAc29omIuXtAg==
   dependencies:
     is-plain-object "^2.0.4"
 
-slate-plain-serializer@^0.6.23:
-  version "0.6.39"
-  resolved "https://registry.yarnpkg.com/slate-plain-serializer/-/slate-plain-serializer-0.6.39.tgz#5fb8d4dc530a2e7e0689548d48964ce242c4516a"
-  integrity sha512-EGl+Y+9Fw9IULtPg8sttydaeiAoaibJolMXNfqI79+5GWTQwJFIbg24keKvsTw+3f2RieaPu8fcrKyujKtZ7ZQ==
+slate-plain-serializer@^0.7.4:
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/slate-plain-serializer/-/slate-plain-serializer-0.7.4.tgz#17c8d6b8444da21b610cfc1606b0e7b0806dc8b9"
+  integrity sha512-F64rUnaLfJ6jyj5vjuFBD0I2c2gOFYELAuDoshHHu27ensIpZzd2hs0oHJkqGHjngd3lKx6/DRHoWADHGAdPHQ==
 
-slate-prop-types@^0.5.14:
+slate-prop-types@^0.5.35:
   version "0.5.35"
   resolved "https://registry.yarnpkg.com/slate-prop-types/-/slate-prop-types-0.5.35.tgz#03a57edd026ca72248249e0116c6d21d7810cacf"
   integrity sha512-tsogOEp2hlFqW7Rjnda9yNiUhVIzM/jfjy+7EVNJkhUR5BmjbU6xhJHng51gFrvRrCzjr7eWmX0KfS27REGLLQ==
 
-slate-react-placeholder@^0.1.2:
-  version "0.1.20"
-  resolved "https://registry.yarnpkg.com/slate-react-placeholder/-/slate-react-placeholder-0.1.20.tgz#1a504727257cd50d9a4da4eb1fe47bdf024eefbf"
-  integrity sha512-A4xq1kS3V3YetFbLE/1dv+/SDVjx9zsZZepJqjcmkGK+evHU2yNkWjZXCg8MLMRtZJpGtYT/BE3+kHbkgT5Q4A==
+slate-react-placeholder@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/slate-react-placeholder/-/slate-react-placeholder-0.2.2.tgz#c4d84177a6898b6fc580dcb62f0a5055d089c68b"
+  integrity sha512-DQhoVN71jJPiWPiGdkyZKIWnzwGfRi/ZqjCfljqRxKryPo6D+xYlAjoyqypClZsHI+KenuS/0h2tc+04HANGWw==
 
-slate-react@0.21.2:
-  version "0.21.2"
-  resolved "https://registry.yarnpkg.com/slate-react/-/slate-react-0.21.2.tgz#8156d5d980e50f878b870e13910908d3a719665c"
-  integrity sha512-V87YPknRKZL3hcXLHDsr7/dU0bvtLjvt27LxB3TZ0+E8CxV9umT/7+MzMc7jPCgSXoWspmJiezy0bvfaE4ivLw==
+slate-react@^0.22.1:
+  version "0.22.2"
+  resolved "https://registry.yarnpkg.com/slate-react/-/slate-react-0.22.2.tgz#5e7f152beb7599df590d39f4a6bff5274d0013ff"
+  integrity sha512-e1LRUuo56PXTVEUN4nxREkDXec7InOeqY07Sab4fbJE2gM98RGAxX3UtzZBaDvKpJGtVfqUG9Rz3MUg96q/ddA==
   dependencies:
     debug "^3.1.0"
     get-window "^1.1.1"
@@ -3385,19 +3421,19 @@ slate-react@0.21.2:
     prop-types "^15.5.8"
     react-immutable-proptypes "^2.1.0"
     selection-is-backward "^1.0.0"
-    slate-base64-serializer "^0.2.84"
-    slate-dev-environment "^0.2.0"
-    slate-hotkeys "^0.2.7"
-    slate-plain-serializer "^0.6.23"
-    slate-prop-types "^0.5.14"
-    slate-react-placeholder "^0.1.2"
+    slate-base64-serializer "^0.2.105"
+    slate-dev-environment "^0.2.2"
+    slate-hotkeys "^0.2.9"
+    slate-plain-serializer "^0.7.4"
+    slate-prop-types "^0.5.35"
+    slate-react-placeholder "^0.2.2"
     tiny-invariant "^1.0.1"
     tiny-warning "^0.0.3"
 
-slate@^0.43.7:
-  version "0.43.7"
-  resolved "https://registry.yarnpkg.com/slate/-/slate-0.43.7.tgz#8e33860dd0ea698c106fe781b2fb926e56e271df"
-  integrity sha512-CoKgZJ703v8pBm80xRwynW9AJsD2+oINrvXZgjENyG03ywhnackGYbXIuXizCYIXiglKfRQ7RHNuEM897X+v2g==
+slate@^0.47.1:
+  version "0.47.2"
+  resolved "https://registry.yarnpkg.com/slate/-/slate-0.47.2.tgz#c943a9795fb2cb2aba54fd862fa73e5e76d3e148"
+  integrity sha512-hu8EeL1fmVT6Etxi//02v+p60Xo0pRkWwApQkyqqdZpc6F9CHgcMpvaA0twFHGmpVI3v2sHDXk7efYJvgJO8sw==
   dependencies:
     debug "^3.1.0"
     direction "^0.1.5"
